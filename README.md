@@ -21,13 +21,13 @@ The structure for the day is listed [on this hackmd note](https://hackmd.io/t6vl
 
 The aim is to achieve this, after loading the page:
 
-[Video](https://i.imgur.com/TFxGKtO.mp4)
+![Video](./final.gif)
 
 We will be using the [google books api](https://developers.google.com/books), and will be making two different api calls to: `https://www.googleapis.com/books/v1/volumes?q=isbn:${isbn}` and `https://www.googleapis.com/books/v1/volumes?q=inauthor:${author}`
 - The title listed under 'Your Book' title will be the title received from `https://www.googleapis.com/books/v1/volumes?q=isbn:${isbn}`, where the `isbn` is `0747532699`.
-  - I.e.: [response](https://www.googleapis.com/books/v1/volumes?q=isbn:0747532699)
+  - I.e.: `https://www.googleapis.com/books/v1/volumes?q=isbn:0747532699` - [response](https://www.googleapis.com/books/v1/volumes?q=isbn:0747532699)
 - Then based on this api call, you will use the author's name received to make another call to `https://www.googleapis.com/books/v1/volumes?q=inauthor:${author}` - and list the book titles received under the heading 'Other Books from the same author'.
-  - I.e.: [response](`https://www.googleapis.com/books/v1/volumes?q=inauthor:J.%20K.%20Rowling`)
+  - I.e.: `https://www.googleapis.com/books/v1/volumes?q=inauthor:J.%20K.%20Rowling` -[response](https://www.googleapis.com/books/v1/volumes?q=inauthor:J.%20K.%20Rowling)
 
 ### Starting
 
@@ -48,3 +48,18 @@ Fork [this codesandbox](https://codesandbox.io/s/youthful-cartwright-hco1p) - by
     - Use the `fetchAuthorBooks()` function
 5. Display this error message "An Error happened! Please try again later" if api call fails
 6. Refactor to use async / await and try / catch
+
+### Useful Resources
+- [Great talk introducing hooks](https://reactjs.org/docs/hooks-intro.html#video-introduction)
+- [Official documentation](https://reactjs.org/docs/hooks-overview.html)
+- [Founders and Coders React notes](https://github.com/oliverjam/learn-react/tree/master/03-a-date-with-state)
+
+### Solution
+
+<details><summary>Click if you're sure...</summary>
+<p>
+
+Find the solution either in this repo `./solution` folder, or [in this codesandbox](https://codesandbox.io/s/great-resonance-qyi64)
+
+</p>
+</details>
