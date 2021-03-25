@@ -31,7 +31,7 @@ We will be using the [google books api](https://developers.google.com/books), an
 
 ### Starting
 
-Fork [this codesandbox](https://codesandbox.io/s/youthful-cartwright-hco1p) - by pressing 'Fork' the blue button on the top right
+Fork [this codesandbox](https://codesandbox.io/s/magical-austin-dpehz?file=/app.js:383-1275) - by pressing 'Fork' the blue button on the top right
   - Or use this repo:
     - `git clone https://github.com/helenzhou6/react-hooks-workshop.git`
     - `cd react-hooks-workshop`
